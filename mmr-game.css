@@ -1,0 +1,184 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background: linear-gradient(to right, hsla(98, 87%, 48%, 0.644), hsl(19, 93%, 42%));
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#console {
+    width: 625px;
+    height: 150px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5%;
+    border: 3px solid black;
+}
+
+.lvl {
+    width: 150px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+}
+
+.ylevel {
+    width: 50px;
+    height: 50px;
+}
+
+.level {
+    width: 75px;
+    height: 50px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10%;
+    border: 3px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container {
+    width: 625px;
+    height: 320px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 3%;
+    border: 3px solid black;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.box {
+    width: 200px;
+    height: 150px;
+    border-radius: 3%;
+    border: 3px solid black;
+    cursor: pointer;
+}
+
+.box:active {
+    transform: translateY(4px);
+}
+
+.box1 {
+    background-color: rgb(0, 255, 0);
+}
+
+.box2 {
+    background-color: rgb(255, 0, 0);
+}
+
+.box3 {
+    background-color: rgb(255, 255, 0);
+}
+
+.box4 {
+    background-color: rgb(0, 0, 255);
+}
+
+.box5 {
+    background-color: rgb(255, 51, 153);
+}
+
+.box6 {
+    background-color: rgb(255, 51, 0);
+}
+
+.buttons {
+    width: 215px;
+    height: 110px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.start {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10%;
+    border: 3px solid black;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.start:active {
+    transform: translateY(4px);
+}
+
+.stop {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10%;
+    border: 3px solid black;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.stop:active {
+    transform: translateY(4px);
+}
+
+.startt {
+    width: 0; 
+    height: 0; 
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-left: 50px solid rgb(0, 255, 0);   
+}
+
+
+.stopp {
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    border-color: rgb(255, 0, 0);
+    border-style: double;
+    border-width: 0px 0px 0px 37px;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .container {
+        width: 360px;
+        height: 200px;
+    }
+    
+    .box {
+        width: 115px;
+        height: 93px; 
+    }
+
+    #console {
+        width: 360px;
+        height: 80px;
+    }
+
+    .stop .start {
+        width: 70px;
+        height: 70px;
+    }
+    
+}
